@@ -1,12 +1,6 @@
-Настройка модуля: https://ngonb.ru/bitrix/admin/settings.php?lang=ru&mid=ngonb.wire&mid_menu=1
+Модуль служит для обмена сигналами между компонентами системы. Компонент модуля ngonb:controller размещается на сайте. Например, в папку SITE_DIR/integration/wire/
+Настройка модуля: /bitrix/admin/settings.php?lang=ru&mid=ngonb.wire&mid_menu=1
 
-Модуль работы с картами - /local/modules/ngonb.nsocard, классы и обработчики – в папке/local/modules/ngonb.nsocard/lib
-Настройки модуля: https://ngonb.ru/bitrix/admin/settings.php?lang=ru&mid=ngonb.nsocard&mid_menu=1
-Страница администрирования: https://ngonb.ru/bitrix/admin/ngonb.nsocard_dispatcher.php
-Для получения значений текущего подключения можно использовать GET-запрос к https://ngonb.ru/integration/nsocard/?action=getConfig
-Для получения строки из БД заявлений  можно использовать GET-запрос к https://ngonb.ru/integration/nsocard/?action=getStatement&statementId=<ID>
-Во всех случаях возвращается JSON-структура с полями STATUS = OK | ERROR, DATA или ERROR (текст ошибки).
-Для обмена сигналами между компонентами системы используется модуль ngonb.wire, компонент которого ngonb:controller размещается на сайте. Например, в папку SITE_DIR/integration/wire/
 Реализовано два метода запросов: запись сигналов и получение сигналов.
 Запись сигналов
 https://<site_name>/integration/wire/put/
